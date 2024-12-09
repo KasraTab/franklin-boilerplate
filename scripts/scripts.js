@@ -29,6 +29,18 @@ function buildHeroBlock(main) {
 }
 
 /**
+ * Builds magic page title block and adjust h1 text
+ * @param {Element} main The container element
+ */
+function magicPageTitle(main) {
+  const h1 = main.querySelector('h1');
+  if (h1) {
+    h1.textContent = 'A different title';
+    main.prepend(h1);
+  }
+}
+
+/**
  * load fonts.css and set a session storage flag
  */
 async function loadFonts() {
@@ -47,6 +59,7 @@ async function loadFonts() {
 function buildAutoBlocks(main) {
   try {
     buildHeroBlock(main);
+    magicPageTitle(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
