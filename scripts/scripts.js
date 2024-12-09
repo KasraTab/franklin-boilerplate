@@ -35,7 +35,7 @@ function buildHeroBlock(main) {
 function magicPageTitle(main) {
   const h1 = main.querySelector('h1');
   if (h1) {
-    h1.style.fontSize = '2.5rem';
+    h1.style.fontSize = '4rem';
     h1.style.backgroundColor = '#f0f0f0';
     main.prepend(h1);
   }
