@@ -71,7 +71,6 @@ async function buildAutoBlocks(main) {
   }
 }
 
-
 /**
  * Decorates the main element.
  * @param {Element} main The main element
