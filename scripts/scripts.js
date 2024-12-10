@@ -28,18 +28,18 @@ function buildHeroBlock(main) {
   }
 }
 
-/**
- * Builds magic page title block and adjust h1 text
- * @param {Element} main The container element
- */
-function magicPageTitle(main) {
-  const h1 = main.querySelector('h1');
-  if (h1) {
-    h1.style.fontSize = '4rem';
-    h1.style.backgroundColor = '#f0f0f0';
-    main.prepend(h1);
-  }
-}
+// /**
+//  * Builds magic page title block and adjust h1 text
+//  * @param {Element} main The container element
+//  */
+// function magicPageTitle(main) {
+//   const h1 = main.querySelector('h1');
+//   if (h1) {
+//     h1.style.fontSize = '4rem';
+//     h1.style.backgroundColor = '#f0f0f0';
+//     main.prepend(h1);
+//   }
+// }
 
 /**
  * load fonts.css and set a session storage flag
@@ -59,7 +59,7 @@ async function loadFonts() {
  */
 async function buildAutoBlocks(main) {
   try {
-    magicPageTitle(main);
+    // magicPageTitle(main);
     buildHeroBlock(main);
     const template = await import('../templates/two-columns/two-columns.js');
     if (template.default) {
