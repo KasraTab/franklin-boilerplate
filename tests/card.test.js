@@ -42,7 +42,7 @@ describe('decorate function', () => {
   it('adds the correct column class and image column class', () => {
     const block = document.querySelector('.block');
     decorate(block);
-
+    console.log(document.body.innerHTML);
     // Check if the block has the correct number of column class
     expect(block.classList.contains('columns-2-cols')).toBe(true);
 
